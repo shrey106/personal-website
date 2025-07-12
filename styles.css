@@ -151,7 +151,7 @@ html {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .hero-section::before {
@@ -482,8 +482,20 @@ html {
     animation: fadeInUp 0.6s ease forwards;
 }
 
+/* Desktop Hero Spacing */
+@media (min-width: 769px) {
+    .hero-section {
+        padding-top: 40px;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Hero Section Mobile Spacing */
+    .hero-section {
+        padding-top: 80px;
+    }
+    
     /* Navbar Mobile Layout */
     .navbar-brand {
         font-size: 1.1rem;
