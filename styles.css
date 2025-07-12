@@ -97,6 +97,8 @@ html {
     margin-right: 0;
     padding-right: 0;
     white-space: nowrap;
+    flex-shrink: 1;
+    min-width: 0;
 }
 
 .nav-link {
@@ -483,14 +485,9 @@ html {
 /* Responsive Design */
 @media (max-width: 768px) {
     /* Navbar Mobile Layout */
-    .navbar .container-fluid {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    
     .navbar-brand {
         font-size: 1.1rem;
-        max-width: 60%;
+        max-width: 65%;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -499,6 +496,7 @@ html {
         padding: 0.25rem 0.5rem;
         margin-left: auto;
         flex-shrink: 0;
+        min-width: 44px;
     }
     
     .navbar-collapse {
@@ -635,19 +633,15 @@ html {
         padding: 0.5rem 0;
     }
     
-    .navbar .container-fluid {
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-    }
-    
     .navbar-brand {
         font-size: 1rem;
-        max-width: 55%;
+        max-width: 60%;
     }
     
     .navbar-toggler {
         padding: 0.2rem 0.4rem;
         font-size: 0.9rem;
+        min-width: 40px;
     }
     
     .hero-content h1 {
